@@ -2,7 +2,6 @@ from openai import OpenAI
 import streamlit as st
 
 st.title("白医小智")
-st.secrets['OPENAI_API_KEY']='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'
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 if "openai_model" not in st.session_state:
